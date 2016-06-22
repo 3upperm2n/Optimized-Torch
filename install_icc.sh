@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+export CC=icc
+export CXX=icpc
+
 SKIP_RC=0
 BATCH_INSTALL=0
 
