@@ -6,7 +6,9 @@ This is a intel torch version which integrated Torch with MKLDNN library.
 MKLDNN library is a math library for deep neural network, and it will be integrated in MKL,so be sure you have installed the lastest MKL
 
 Before install, you should set the MKL path for cmake:
+
 export CMAKE_INCLUDE_PATH=$CMAKE_INCLUDE_PATH:/opt/intel/mkl/include
+
 export CMAKE_LIBRARY_PATH=$CMAKE_LIBRARY_PATH:/opt/intel/mkl/lib/intel64
 
 Install dependencies. Uses `apt-get` on Ubuntu, which might require `sudo`. Uses `brew` on OSX.
