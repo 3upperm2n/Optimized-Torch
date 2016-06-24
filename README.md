@@ -1,7 +1,13 @@
 [![Build Status](https://travis-ci.org/torch/distro.svg?branch=master)](https://travis-ci.org/torch/distro)
 
-Self-contained Torch installation
+Self-contained Torch+MKLDNN installation
 ============
+This is a intel torch version which integrated Torch with MKLDNN library.
+MKLDNN library is a math library for deep neural network, and it will be integrated in MKL,so be sure you have installed the lastest MKL
+
+Before install, you should set the MKL path for cmake:
+export CMAKE_INCLUDE_PATH=$CMAKE_INCLUDE_PATH:/opt/intel/mkl/include
+export CMAKE_LIBRARY_PATH=$CMAKE_LIBRARY_PATH:/opt/intel/mkl/lib/intel64
 
 Install dependencies. Uses `apt-get` on Ubuntu, which might require `sudo`. Uses `brew` on OSX.
 ```sh
@@ -10,7 +16,7 @@ curl -s https://raw.githubusercontent.com/torch/distro/master/install-deps | bas
 
 Install this repo, which installs the torch distribution, with a lot of nice goodies.
 ```sh
-git clone https://github.com/xhzhao/distro.git ./torch -b mkldnn
+git clone https://github.com/xhzhao/distro.git ./torch
 cd ~/torch; ./install.sh
 ```
 
@@ -32,3 +38,6 @@ Note: If you use a non-standard shell, you'll want to run this command
 ```
 
 Tested on Ubuntu 14.04, CentOS/RHEL 6.3 and OSX
+
+To check the performance of Torch+MKLDNN, please use the benchmark:
+https://github.com/xhzhao/Torch-MKLDNN-benchmark
