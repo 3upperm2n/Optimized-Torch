@@ -206,7 +206,7 @@ else
 fi
 
 
-$WRITE_PATH_TO_PROFILE = 0
+
 if [[ $WRITE_PATH_TO_PROFILE == 1 ]]; then
     echo "
 
