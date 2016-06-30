@@ -205,7 +205,7 @@ else
     fi
 fi
 
-<<comment3
+
 $WRITE_PATH_TO_PROFILE = 0
 if [[ $WRITE_PATH_TO_PROFILE == 1 ]]; then
     echo "
@@ -226,4 +226,4 @@ add the following lines to your shell profile:
 . $PREFIX/bin/torch-activate
 "
 fi
-comment3
+
