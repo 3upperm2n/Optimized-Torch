@@ -3,8 +3,9 @@
 Self-contained Torch+MKLDNN installation
 ============
 This is a intel torch version which integrated Torch with MKLDNN library.
-MKLDNN library is a math library for deep neural network, and it will be integrated in MKL,so be sure you have installed the lastest MKL
+MKLDNN library is a optimized  math library for deep neural network based IA, and it will be integrated in MKL,so be sure you have installed the lastest MKL
 
+###Building
 Before install, you should set the MKL path for cmake:
 
 export CMAKE_INCLUDE_PATH=$CMAKE_INCLUDE_PATH:/opt/intel/mkl/include
@@ -46,6 +47,8 @@ Note: If you use a non-standard shell, you'll want to run this command
 
 Tested on Ubuntu 14.04, CentOS/RHEL 6.3 and OSX
 
+
+###Performance
 To check the performance of Torch+MKLDNN, please use the benchmark:
 https://github.com/xhzhao/Torch-MKLDNN-benchmark
 
