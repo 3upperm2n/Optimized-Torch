@@ -21,6 +21,11 @@ Install this repo, which installs the torch distribution, with a lot of nice goo
 git clone https://github.com/xhzhao/distro.git ./torch
 cd ~/torch; ./install.sh
 ```
+If you want to build torch with icc, use ./install_icc.sh instead of ./install.sh
+
+If the submodule download process is broken due to network error, no worry,just retry the bash: ./install.sh, then the download process will continue.
+
+The submodule of nn and torch7 is replaced with my own repo:https://github.com/xhzhao/nn, https://github.com/xhzhao/torch7.
 
 By default Torch will install LuaJIT 2.1. If you want other options, you can use the command:
 ```sh
@@ -43,3 +48,5 @@ Tested on Ubuntu 14.04, CentOS/RHEL 6.3 and OSX
 
 To check the performance of Torch+MKLDNN, please use the benchmark:
 https://github.com/xhzhao/Torch-MKLDNN-benchmark
+
+To test Torch+MKLDNN on the imagenet dataset, refer to this link:  https://github.com/xhzhao/imagenet-CPU.torch
