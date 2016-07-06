@@ -1,9 +1,20 @@
 [![Build Status](https://travis-ci.org/torch/distro.svg?branch=master)](https://travis-ci.org/torch/distro)
 
-Self-contained Torch+MKLDNN installation
+Torch
 ============
-This is a intel torch version which integrated Torch with MKLDNN library.
-MKLDNN library is a optimized  math library for deep neural network based IA, and it will be integrated in MKL,so be sure you have installed the lastest MKL
+Torch is a scientific computing framework with wide support for machine learning algorithms. It is easy to use and efficient, thanks to an easy and fast scripting language, LuaJIT, and an underlying C/CUDA implementation.
+
+###Intel Torch
+Intel Torch is dedicated to improving Torch performance when running on CPU, in particular Intel® Xeon processors (HSW+)
+Intel Torch integrated Torch with Intel® Math Kernel Library for Deep Neural Networks(Intel®MKL-DNN), which is a optimized  math library for deep neural network based on IA.
+Compared to the original Torch, Intel Torch gets 4.66x speedup using the convnet-benchmarks which includes AlexNet,VGG-E,GoogLenet,ResidualNet.
+Also the convergence of imagenet on Intel Torch AlexNet is checked.
+
+
+###requirements
+Intel®MKL-DNN is integrated in Intel®MKL,so be sure you have installed the lastest MKL version: parallel_studio_xe_2017_beta. 
+Besides, a new patch is necessary for MKLDNN: mkl_2017b1_20160513_lnx.tgz . 
+unzip this tgz file and link the mkl directory to /opt/intel/mkl.
 
 ###Building
 Before install, you should set the MKL path for cmake:
