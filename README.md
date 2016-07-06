@@ -25,15 +25,11 @@ export CMAKE_INCLUDE_PATH=$CMAKE_INCLUDE_PATH:/opt/intel/mkl/include
 
 export CMAKE_LIBRARY_PATH=$CMAKE_LIBRARY_PATH:/opt/intel/mkl/lib/intel64
 
-Install dependencies. Uses `apt-get` on Ubuntu, which might require `sudo`. Uses `brew` on OSX.
-```sh
-curl -s https://raw.githubusercontent.com/torch/distro/master/install-deps | bash
-```
-
 Install this repo, which installs the torch distribution, with a lot of nice goodies.
 ```sh
 git clone https://github.com/xhzhao/distro.git ./torch
-cd ~/torch; ./install.sh
+cd ~/torch; bash install-deps;
+./install.sh
 ```
 If you want to build torch with icc, use ./install_icc.sh instead of ./install.sh
 
