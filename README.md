@@ -6,13 +6,13 @@ Torch is a scientific computing framework with wide support for machine learning
 
 Intel Torch
 ============
-Intel Torch is dedicated to improving Torch performance when running on CPU, in particular Intel® Xeon processors (HSW+)
-Intel Torch integrated Torch with Intel® Math Kernel Library(Intel®MKL),using new APIs for deep neural network based on IA.
+Intel Torch is dedicated to improving Torch performance when running on CPU, in particular IntelÂ® Xeon processors (HSW+)
+Intel Torch integrated Torch with IntelÂ® Math Kernel Library(IntelÂ®MKL),using new APIs for deep neural network based on IA.
 Compared to the original Torch, Intel Torch gets 4.66x speedup using the convnet-benchmarks which includes AlexNet,VGG-E,GoogLenet,ResidualNet.
 Also the convergence of imagenet on Intel Torch AlexNet is checked.
 
 ###Requirements
-Intel®MKL-DNN is integrated in Intel®MKL,so be sure you have installed the lastest MKL version: parallel_studio_xe_2017_beta. 
+IntelÂ®MKL-DNN is integrated in IntelÂ®MKL,so be sure you have installed the lastest MKL version: parallel_studio_xe_2017_beta. 
 Besides, a new patch is necessary for MKL: mkl_2017b1_20160513_lnx.tgz. 
 
 Contact the author if you need this packages.
@@ -58,7 +58,7 @@ Note: If you use a non-standard shell, you'll want to run this command
 ./install/bin/torch-activate
 ```
 
-Tested on Ubuntu 14.04, CentOS/RHEL 6.3 and OSX
+Tested on Ubuntu 14.04
 
 
 ###Performance
