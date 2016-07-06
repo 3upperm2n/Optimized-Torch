@@ -13,7 +13,8 @@ Also the convergence of imagenet on Intel Torch AlexNet is checked.
 
 ###Requirements
 Intel®MKL-DNN is integrated in Intel®MKL,so be sure you have installed the lastest MKL version: parallel_studio_xe_2017_beta. 
-Besides, a new patch is necessary for MKLDNN: mkl_2017b1_20160513_lnx.tgz. 
+Besides, a new patch is necessary for MKL: mkl_2017b1_20160513_lnx.tgz. 
+
 Contact the author if you need this packages.
 
 
@@ -61,7 +62,7 @@ Tested on Ubuntu 14.04, CentOS/RHEL 6.3 and OSX
 
 
 ###Performance
-To check the performance of Torch+MKLDNN, please use the benchmark:
+To check the performance of Intel Torch, please use the benchmark:
 https://github.com/xhzhao/IntelTorch-benchmark
 
-To test Torch+MKLDNN on the imagenet dataset, refer to this link:  https://github.com/xhzhao/imagenet-CPU.torch
+To test Intel Torch on the imagenet dataset, refer to this link:  https://github.com/xhzhao/imagenet-CPU.torch
