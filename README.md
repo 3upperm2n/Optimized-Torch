@@ -13,7 +13,7 @@ Also the convergence of imagenet on Intel Torch AlexNet is checked.
 
 ###Requirements
 Intel®MKL-DNN is integrated in Intel®MKL,so be sure you have installed the lastest MKL version: parallel_studio_xe_2017_beta. 
-If you are intel employee, click here(https://software.intel.com/en-us/forums/intel-math-kernel-library/topic/623305) to register,then you'll be able to download the bits.
+If you are intel employee, click [here](https://softwareproductsurvey.intel.com/f/150587/1103/) to register,then you'll be able to download the bits.
 
 Besides, a new patch is necessary for MKL: mkl_2017b1_20160513_lnx.tgz. 
 
