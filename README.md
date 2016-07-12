@@ -14,8 +14,7 @@ Also the convergence of imagenet on Intel Torch AlexNet is checked.
 ###Requirements
 Be sure you have installed the lastest MKL version: parallel_studio_xe_2017_beta. 
 If you are intel employee, click [here](https://softwareproductsurvey.intel.com/f/150587/1103/) to register,then you'll be able to download the bits.
-
-Besides, a new patch is necessary for MKL: mkl_2017b1_20160513_lnx.tgz. 
+Besides, a new patch is necessary for MKL: mkl_2017b1_20160513_lnx.tgz. Unzip this tgz file, and link the subdirectory __release_lnx/mkl to /opt/intel/mkl.
 
 Contact the author if you need this packages.
 
