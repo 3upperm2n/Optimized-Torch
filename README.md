@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/torch/distro.svg?branch=master)](https://travis-ci.org/torch/distro)
 
-Torch
+Torch*
 ============
 Torch is a scientific computing framework with wide support for machine learning algorithms. It is easy to use and efficient, thanks to an easy and fast scripting language, LuaJIT, and an underlying C/CUDA implementation.
 
@@ -66,3 +66,6 @@ https://github.com/xhzhao/IntelTorch-benchmark
 
 
 To test Intel Torch on the imagenet dataset, refer to this link:  https://github.com/xhzhao/imagenet-CPU.torch
+
+---
+>\* Other names and trademarks may be claimed as the property of others.
