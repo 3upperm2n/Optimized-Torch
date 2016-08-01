@@ -4,7 +4,7 @@ Torch*
 ============
 Torch is a scientific computing framework with wide support for machine learning algorithms. It is easy to use and efficient, thanks to an easy and fast scripting language, LuaJIT, and an underlying C/CUDA implementation.
 
-Intel Torch
+Optimized-Torch
 ============
 Intel Torch is dedicated to improving Torch performance when running on CPU, in particular Intel® Xeon processors (HSW+)
 Intel Torch integrated Torch with Intel® Math Kernel Library(Intel®MKL),using new APIs for deep neural network based on IA.
