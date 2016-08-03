@@ -60,9 +60,7 @@ Tested on Ubuntu 14.04
 
 ###Performance
 To check the performance of Intel Torch, please use the benchmark:
-https://github.com/xhzhao/IntelTorch-benchmark
-
-![Performance chart](img/chart.jpg)
+https://github.com/xhzhao/Optimized-Torch-benchmark
 
 
 To test Intel Torch on the imagenet dataset, refer to this link:  https://github.com/xhzhao/imagenet-CPU.torch
