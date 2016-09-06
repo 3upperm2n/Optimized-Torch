@@ -32,7 +32,7 @@ git clone https://github.com/xhzhao/distro.git ./torch
 cd ~/torch; bash install-deps;
 ./install.sh
 ```
-If you want to build torch with icc, use ./install_icc.sh instead of ./install.sh
+To get a better performance,you need to build torch with icc, use ./install_icc.sh instead of ./install.sh
 
 If the submodule download process is broken due to network error, no worry,just retry the bash: ./install.sh, then the download process will continue.
 
