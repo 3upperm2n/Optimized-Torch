@@ -3,6 +3,7 @@
 export CC=icc
 export CXX=icpc
 
+
 SKIP_RC=0
 BATCH_INSTALL=0
 
@@ -106,13 +107,14 @@ cd ${THIS_DIR}/extra/nngraph && $PREFIX/bin/luarocks make                       
 cd ${THIS_DIR}/pkg/image     && $PREFIX/bin/luarocks make image-1.1.alpha-0.rockspec   || exit 1
 cd ${THIS_DIR}/pkg/optim     && $PREFIX/bin/luarocks make optim-1.0.5-0.rockspec       || exit 1
 
+<< comment1
 if [ -x "$path_to_nvcc" ]
 then
     echo "Found CUDA on your machine. Installing CUDA packages"
     cd ${THIS_DIR}/extra/cutorch && $PREFIX/bin/luarocks make rocks/cutorch-scm-1.rockspec || exit 1
     cd ${THIS_DIR}/extra/cunn    && $PREFIX/bin/luarocks make rocks/cunn-scm-1.rockspec    || exit 1
 ifi
-
+comment1
 
 # Optional packages
 echo "Installing optional Torch packages"
@@ -129,12 +131,14 @@ cd ${THIS_DIR}/extra/fftw3          && $PREFIX/bin/luarocks make rocks/fftw3-scm
 cd ${THIS_DIR}/extra/signal         && $PREFIX/bin/luarocks make rocks/signal-scm-1.rockspec
 
 # Optional CUDA packages
+<<comment2
 if [ -x "$path_to_nvcc" ]
 then
     echo "Found CUDA on your machine. Installing optional CUDA packages"
     cd ${THIS_DIR}/extra/cudnn   && $PREFIX/bin/luarocks make cudnn-scm-1.rockspec
     cd ${THIS_DIR}/extra/cunnx   && $PREFIX/bin/luarocks make rocks/cunnx-scm-1.rockspec
 fi
+comment2
 
 export PATH=$OLDPATH # Restore anaconda distribution if we took it out.
 
@@ -206,7 +210,7 @@ else
 fi
 
 
-$WRITE_PATH_TO_PROFILE = 0
+
 if [[ $WRITE_PATH_TO_PROFILE == 1 ]]; then
     echo "
 
@@ -226,3 +230,4 @@ add the following lines to your shell profile:
 . $PREFIX/bin/torch-activate
 "
 fi
+
